@@ -116,4 +116,74 @@
         }
     }
     
+    //P04.2
+    static void Main7()
+    {
+        PlayGame();
+    }
+
+   static void PlayGame()
+    {
+        while (true)
+        {
+            string PlayerChoice = getPlayerChoice();
+            string AIChoice = getAIChoice();
+            
+            Console.WriteLine($"{PlayerChoice}");
+            Console.WriteLine($"{AIChoice}");
+            
+            string result = whoWin(PlayerChoice, AIChoice);
+            Console.WriteLine(result);
+        }
+    }
+
+    static string getPlayerChoice()
+    {
+        string choice;
+        while (true)
+        {
+            Console.WriteLine("Rock, Paper, or Scissors?");
+            choice = Console.ReadLine();
+
+            if (choice == "Rock" || choice == "Paper" || choice == "Scissors")
+            {
+                return choice;
+            }
+            Console.WriteLine("Try again.");
+        }
+    }
+
+    static string getAIChoice()
+    {
+        Random random = new Random();
+        int choice = random.Next(1, 3);
+        switch (choice)
+        {
+            case 0: return "Rock";
+            case 1: return "Paper";
+            case 2: return "Scissors";
+                return null;
+        }
+
+        return null;
+    }
+
+
+    static string whoWin(string Player, string AI)
+    {
+        if (Player.Equals(AI))
+        {
+            return "It's a tie";
+        }
+
+        if ((Player.Equals("Rock") && AI.Equals("Scissors")
+             || Player.Equals("Paper") && AI.Equals("Rock") ||
+             Player.Equals("Scissors") && AI.Equals("Paper")))
+        {
+            return "You wins";
+        }
+        return "AI wins";
+    }
+
     
+   
