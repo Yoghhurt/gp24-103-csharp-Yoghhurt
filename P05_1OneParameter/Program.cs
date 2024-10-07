@@ -22,6 +22,21 @@ multiply(2000000000);
 
 void cube(int cubical)
 {
-    Console.WriteLine(cubical*3*3);
+    Console.WriteLine(cubical*cubical*cubical);
 }
+cube(1);
+cube(0);
+cube(2);
+cube(3);
+cube(-4);
 
+//P05_1_3
+void square(float sq)
+{
+    Console.WriteLine(sq*sq*sq*sq);
+}
+square(0.5f);
+square(-2f);
+square(0f);
+square(4.2f);
+//P05_1_4
