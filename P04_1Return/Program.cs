@@ -76,4 +76,15 @@
             Console.WriteLine("You did not enter a valid number. Please enter a valid number.");
         }
     }
-    
+    //P04_2_3
+
+    static void Main3()
+    {
+        int AIMatches = GetAIMatches();
+    }
+
+    static int GetAIMatches()
+    {
+        Random random = new Random();
+        return random.Next(1, 4);
+    }
