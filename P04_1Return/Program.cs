@@ -54,4 +54,26 @@
         }
     //P04_2_2
 
+    static void Main2()
+    {
+        int userMatches = GetUserMatches();
+    }
+
+    static int GetUserMatches()
+    {
+        int matches;
+        while (true)
+        {
+            Console.WriteLine("What are your matches?");
+            string match = Console.ReadLine();
+            if (int.TryParse(match, out matches))
+            {
+                if (matches >= 1 && matches <= 3)
+                {
+                    return matches;
+                }
+            }
+            Console.WriteLine("You did not enter a valid number. Please enter a valid number.");
+        }
+    }
     
