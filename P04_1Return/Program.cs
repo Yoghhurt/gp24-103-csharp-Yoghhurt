@@ -11,24 +11,16 @@
     }
 
 //P04_1_2
-    void healthBar()
-    {
-        int health = 100;
-        healthDmg(health);
-    }
-
-    void healthDmg(int health)
-    {
-        Console.WriteLine($"Health: {health}");
-
-        health--;
-
-        if (health == 3)
-        {
+    
+    void health(int hp){
+        if(hp == 3){
+            Console.WriteLine(hp--);
+            health(hp);
             return;
-        } 
-        healthBar();
         }
+        health(5);
+    }
+    
     
 
     //P04_1_3
@@ -42,15 +34,24 @@
     MagicMessage();
 
 //P04_2_1
+    
+        static void Main()
+        {
+            int four = 4;
+            int five = 5;
+            int sum = five + four;
+            Console.WriteLine(sum);
+        }
 
-    void four()
-    {
-        int four = 4;
-    }
+        static int four()
+        {
+            return 4;
+        }
 
-    void five()
-    {
-        int five = 5;
-    }
+        static int five()
+        {
+            return 5;
+        }
+    //P04_2_2
 
     
