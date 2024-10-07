@@ -50,31 +50,13 @@ F3();
 
 //P03 final 
 
-{
-    static void Countdown()
-    {
-        int timer = 5;
-        Console.WriteLine(timer);
-
-        
-        timer--;
-
-        
-        if (timer >= 1)
-        {
-            
-            Countdown();
-        }
-        else
-        {
-            
-            Console.WriteLine("Launch!");
-        }
-    }
-
-    static void Main()
-    {
-        
-        Countdown();
-    }
+ 
+void Countdown(int timer){
+    if(timer > -1){
+        Console.WriteLine(timer--);
+        Countdown(timer);
+    }else
+        Console.WriteLine("Launch");
 }
+Countdown(5);
+

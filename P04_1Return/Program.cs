@@ -40,3 +40,17 @@
         Console.WriteLine("You found the magic message.");
     }
     MagicMessage();
+
+//P04_2_1
+
+    void four()
+    {
+        int four = 4;
+    }
+
+    void five()
+    {
+        int five = 5;
+    }
+
+    
