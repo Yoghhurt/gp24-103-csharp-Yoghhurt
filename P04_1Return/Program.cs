@@ -88,3 +88,32 @@
         Random random = new Random();
         return random.Next(1, 4);
     }
+    
+    //P04.1 
+    static void main5()
+    {
+        Myfunction();
+    }
+    static void Myfunction()
+    {
+
+    Console.WriteLine("What's your name?");
+        string name = Console.ReadLine();
+        if (name == "Jack") ;
+        {
+            Console.WriteLine("What's your age?");
+            string age = Console.ReadLine();
+            int ageInt = Convert.ToInt32(age);
+            if (ageInt >= 18) ;
+            {
+                Console.WriteLine("Do you want to enter?");
+                string enter = Console.ReadLine();
+                if (enter == "yes") ;
+                {
+                    Console.WriteLine("Congrats! You made it!");
+                }
+            }
+        }
+    }
+    
+    
