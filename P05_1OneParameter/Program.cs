@@ -40,3 +40,39 @@ square(-2f);
 square(0f);
 square(4.2f);
 //P05_1_4
+
+void primer(int prime)
+{
+    Console.WriteLine(prime);
+    if (prime > 1);
+}
+//P05_1_5
+void count(int countdown)
+{
+    if (countdown > 1)    
+        countdown--;
+    Console.WriteLine(countdown--);
+    
+}
+count(10);
+
+//P05 final
+
+void fibonaccinumber(int num)
+{
+    int n = 10; 
+}
+
+static int Fibonacci(int n)
+{
+    int a = 0, b = 1, temp;
+
+    for (int i = 0; i < n; i++)
+    {
+        temp = a;
+        a = b;
+        b = temp + b;
+    }
+
+    return a;
+}
