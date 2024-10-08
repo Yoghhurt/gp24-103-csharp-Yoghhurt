@@ -58,10 +58,14 @@ count(10);
 
 //P05 final
 
-void fibonaccinumber(int num)
+void fibo(int n)
 {
-    int n = 10; 
+    Console.WriteLine("What Fibonacci number would you like?");
+    int number = n;
+    Console.WriteLine($"Fibonacci number is {number}");
 }
+
+Fibonacci(10);
 
 static int Fibonacci(int n)
 {
