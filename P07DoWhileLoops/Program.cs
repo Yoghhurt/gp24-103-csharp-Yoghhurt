@@ -1,18 +1,34 @@
-﻿int a = 1;
+﻿using System.ComponentModel.Design;
+
+int number;
+int a = 1;
 int b = 3;
-int c = 41;
-int d = 103;
+int x = 41;
+int y = 103;
 
-    int askUserBetween(int min, int max);
+
+int AskUserBetween(int min, int max)
+{
+    do
     {
-        do
-        {
-            Console.WriteLine("Gimme a number between {a} & {b}.");
-            string userInput = Console.ReadLine();
-            int userNumber = int.Parse(userInput);
-            
-            if (userNumber >= a && userNumber <= b) ;
-            Console.WriteLine($"You gave me {userNumber}.");
-        } while ();
-    }
+        Console.WriteLine($"Gimme a number between {min} and {max}");
+        string userInput = Console.ReadLine();
+        int number = int.Parse(userInput);
+        min = a;
+        max = b;
+        if (number >= min && number <= max) ;
+        Console.WriteLine($"You entered {number}.");
+    } while (number < a && number > b);
 
+    do
+    {
+        Console.WriteLine($"Gimme a number between {min} and {max}");
+        string userInput = Console.ReadLine();
+        int number = int.Parse(userInput);
+        min = x;
+        max = y;
+        if (number >= min && number <= max) ;
+        Console.WriteLine($"You entered {number}.");
+    } while (number < a && number > b);
+    
+} 
