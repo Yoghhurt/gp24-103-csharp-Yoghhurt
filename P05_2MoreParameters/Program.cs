@@ -1,4 +1,6 @@
-﻿void PrintWelcomeMessage(string firstName, string lastName){
+﻿using System.ComponentModel.Design;
+
+void PrintWelcomeMessage(string firstName, string lastName){
     Console.WriteLine($"Welcome {firstName} {lastName}");
 }
 PrintWelcomeMessage("Marc", "Zaku");
@@ -31,3 +33,25 @@ PowerOf(2, 5);
 PowerOf(2, 10);
 PowerOf(19, 0);
 PowerOf(13, 1);
+
+void numRandom(double min, double max)
+{
+    Random random = new Random();
+    double randomNumber = random.NextDouble() * (max - min) + min;
+    Console.WriteLine($"random number is {randomNumber}");
+}
+numRandom(3, 7);
+
+//P05_3
+
+void GetUserRandomNumber(int minimum, int maximum)
+{
+    Console.WriteLine($"Gimme a number between {minimum} and {maximum}");
+    string userNumber = Console.ReadLine();
+    int userInt = int.Parse(userNumber);
+    {
+        if (userInt >= minimum && userInt <= maximum) ;
+        Console.WriteLine("Correct!");
+    }
+}
+GetUserRandomNumber(1, 10);
