@@ -77,22 +77,18 @@ float Lerp(float from, float to, float t)
     from = 0f;
     to = 1f;
     t = 1f;
-
-   
     
     start = from;
-    to = end;
-    t = timePassed;
-    
-    
-
+    end = from + (to - from);
+    timePassed = from + (to - from) * t;
+    return from + to + t;
 }
 
-float RoundToInt(float value)
+int RoundToInt(float value)
 {
     int inter = Convert.ToInt32(value);
     int intValue = (int)value;
-    return value;
+    return intValue;
 }
 // and here!
 // -----------------------------------
