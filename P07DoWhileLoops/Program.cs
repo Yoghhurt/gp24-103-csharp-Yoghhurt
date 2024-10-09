@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.Design;
 
 int number;
+int result;
 int a = 1;
 int b = 3;
 int x = 41;
@@ -27,8 +28,9 @@ int AskUserBetween(int min, int max)
         int number = int.Parse(userInput);
         min = x;
         max = y;
-        if (number >= min && number <= max) ;
+         if (number >= min && number <= max) ;
         Console.WriteLine($"You entered {number}.");
     } while (number < a && number > b);
-    
+
+    return result;
 } 
