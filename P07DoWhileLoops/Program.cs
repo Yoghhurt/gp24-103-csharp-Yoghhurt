@@ -8,15 +8,15 @@ int x = 41;
 int y = 103;
 
 
-int AskUserBetween(int min, int max)
+void AskUserBetween(int min, int max)
 {
     do
     {
         Console.WriteLine($"Gimme a number between {min} and {max}");
         string userInput = Console.ReadLine();
         int number = int.Parse(userInput);
-        min = a;
-        max = b;
+        //min = a;
+        //max = b;
         if (number >= min && number <= max) ;
         Console.WriteLine($"You entered {number}.");
     } while (number < a && number > b);
@@ -26,11 +26,11 @@ int AskUserBetween(int min, int max)
         Console.WriteLine($"Gimme a number between {min} and {max}");
         string userInput = Console.ReadLine();
         int number = int.Parse(userInput);
-        min = x;
-        max = y;
+        //min = x;
+        //max = y;
          if (number >= min && number <= max) ;
         Console.WriteLine($"You entered {number}.");
     } while (number < a && number > b);
-
-    return result;
 } 
+AskUserBetween(1, 3);
+AskUserBetween(41, 103);
