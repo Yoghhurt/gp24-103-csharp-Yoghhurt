@@ -33,3 +33,28 @@
     }
 }
 game();
+
+//skip
+
+for(int i = 0;;i++){
+    // -----------------------
+    // only add code in between here...
+    if (i % 2 == 0)
+    {
+        continue;
+    }
+
+    if (i % 5 == 0)
+    {
+        continue;
+    }
+
+    if (i >= 13)
+    {
+        break;
+    }
+    // ...and here
+    // -----------------------
+    Console.WriteLine(i);
+}
+Console.WriteLine("Done.");
