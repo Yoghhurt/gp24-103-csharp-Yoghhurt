@@ -1,5 +1,11 @@
-﻿
-   static void startGame(); {
+﻿int hp = 10;
+
+static void startGame()
+{
+
+
+
+    {
         for (int i = 10; i <= 0; i--)
         {
             Console.WriteLine($"{i}");
@@ -14,7 +20,8 @@
             }
 
 
-        } 
-   }
+        }
+    }
+}
 
 startGame();
