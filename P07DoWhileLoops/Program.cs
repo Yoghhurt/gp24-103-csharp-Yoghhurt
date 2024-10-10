@@ -1,12 +1,9 @@
-﻿using System.ComponentModel.Design;
-
-int number;
-int result;
-int a = 1;
+﻿int a = 1; 
 int b = 3;
-int x = 41;
-int y = 103;
+int c = 41;
+int d = 103;
 
+bool loop = true;
 
 void AskUserBetween(int min, int max)
 {
@@ -15,22 +12,12 @@ void AskUserBetween(int min, int max)
         Console.WriteLine($"Gimme a number between {min} and {max}");
         string userInput = Console.ReadLine();
         int number = int.Parse(userInput);
-        //min = a;
-        //max = b;
-        if (number >= min && number <= max) ;
+        if (number < min && number > max) ;
         Console.WriteLine($"You entered {number}.");
-    } while (number < a && number > b);
-
-    do
-    {
-        Console.WriteLine($"Gimme a number between {min} and {max}");
-        string userInput = Console.ReadLine();
-        int number = int.Parse(userInput);
-        //min = x;
-        //max = y;
-         if (number >= min && number <= max) ;
-        Console.WriteLine($"You entered {number}.");
-    } while (number < a && number > b);
+    } 
+    while (loop);
+    
 } 
+
 AskUserBetween(1, 3);
 AskUserBetween(41, 103);
